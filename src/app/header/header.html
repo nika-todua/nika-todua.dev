@@ -1,0 +1,20 @@
+<nav class="relative header_nav w-[90%] flex justify-between items-center rounded-2xl">
+
+    <a routerLink="/" rel="follow" class="header_nav_logo_link flex w-[45px] h-[45px] aspect-square">
+        <img src="/assets/icon/website_logo.png" class="flex events-none aspect-square" width="45px" height="45px" loading="lazy" alt="logo">
+    </a>
+
+    <ul class="header_nav-list flex gap-4 {{navclasstoggle}}">
+        <li><a routerLinkActive="link_active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/" rel="follow" class="header_nav-list-link text-white font-semibold">Home</a></li>
+        <li><a routerLinkActive="link_active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/about" rel="follow" class="header_nav-list-link text-white font-semibold">About</a></li>
+        <li><a routerLinkActive="link_active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/work" rel="follow" class="header_nav-list-link text-white font-semibold">Work</a></li>
+        <li><a routerLinkActive="link_active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/contact" rel="follow" class="header_nav-list-link text-white font-semibold">Contact</a></li>
+    </ul>
+    
+    <div class="toggle {{navclasstoggle}} relative flex flex-col justify-between items-center cursor-pointer md:hidden" (click)="toggleEvent()">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+    
+</nav>
