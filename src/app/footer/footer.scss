@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.footer{
+    &_inner{
+        max-width: $max-cont;
+        &-top_cont{
+            .text_cont{
+                
+                .footer_mail_link,
+                .footer_title{
+                    font-family: $font-fm;
+                    color: #fff;
+                }
+            }
+        }
+        &-bottom_cont{
+            .footer_nav{
+                .nav_item{
+                    .nav_title{
+                        font-family: $font-fm;
+                        color: #fff;
+                    }
+                    
+                    ul{
+                        li{
+                            font-family: $font-fm;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
