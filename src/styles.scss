@@ -6,3 +6,12 @@
 // body{
     // background-color: $bg-color;
 // }
+header{
+    z-index: 998;
+}
+footer{
+    background-color: $bg-color;
+}
+.container_pages{
+    max-width: $max-cont;
+}

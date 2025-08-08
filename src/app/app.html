@@ -1,12 +1,12 @@
-<header class="fixed w-full py-3.5" *ngIf="false">
+<header class="fixed w-full py-3.5" *ngIf="true">
   <app-header class="w-full flex items-center justify-center"></app-header>
 </header>
 
-<!-- <main>
+<main class="relative w-full">
   <router-outlet></router-outlet>
-</main> -->
+</main>
 
 
-<footer style="background-color: red;" class="relative w-full flex justify-center items-center">
+<footer class="relative w-full flex justify-center items-center" *ngIf="false">
   <app-footer class="w-full "></app-footer>
 </footer>
